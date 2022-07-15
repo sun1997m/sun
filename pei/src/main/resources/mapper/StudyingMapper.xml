@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"
+        >
+<mapper namespace="com.cn.peixun.dao.StudyingDao">
+
+    <select id="selall" resultMap="mystudying">
+        select a.*,b.* from studystart a,wenjian b where a.stuJiaoCai=b.wenjianId;
+    </select>
+    <resultMap id="mystudying" type="com.cn.peixun.entity.StudyStart">
+        <id property="studystartId" column="studystartId"></id>
+        <result property="studyNo" column="studyNo"></result>
+        <result property="studystartLessonName" column="studystartLessonName"></result>
+        <result property="studystartChapterName" column="studystartChapterName"></result>
+        <result property="studystartTime" column="studystartTime"></result>
+        <result property="studystartCounts" column="studyNo"></result>
+        <result property="studyStatus" column="studyNo"></result>
+        <result property="stuJiaoCai" column="studyNo"></result>
+     <collection property="wenJian"  ofType="com.cn.peixun.entity.WenJian">
+         <id property="wenjianId" column="wenjianId"></id>
+         <result property="wenjianTitle" column="wenjianTitle"></result>
+     </collection>
+    </resultMap>
+
+
+
+
+
+
+
+
+
+    <select id="selwendang" parameterType="int" resultMap="mywenjian">
+        select a.`wenjianwdName`,a.`wenjianwdType`,a.`wenjianwdDaXiao`,a.wenjianwdId,b.*
+        from  wenjianwendang a,wenjian b
+        where a.`wenjianwdNo`=b.`wenjianId`
+        and b.`wenjianId`=#{wenjianId}
+    </select>
+
+    <resultMap id="mywenjian" type="com.cn.peixun.entity.WenJian">
+        <id property="wenjianId" column="wenjianId"></id>
+        <result property="wenjianPinji" column="wenjianPinji"></result>
+        <result property="wenjianTitle" column="wenjianTitle"></result>
+        <result property="wenjianPinjia" column="wenjianPinjia"></result>
+        <collection property="wengDangs"  column="wenjianwdId" ofType="com.cn.peixun.entity.WengDang">
+            <id column="wenjianwdId" property="wenjianwdId"></id>
+            <result property="wenjianwdName" column="wenjianwdName"></result>
+            <result property="wenjianwdType" column="wenjianwdType"></result>
+            <result property="wenjianwdDaXiao" column="wenjianwdDaXiao"></result>
+        </collection>
+    </resultMap>
+
+
+    <!--计算相关文档条数-->
+    <select id="count" resultType="int">
+         select count(*)
+         from wenjianwendang a,wenjian b
+         where a.`wenjianwdNo`=b.`wenjianId`
+         and b.`wenjianId`=#{wenjianId}
+    </select>
+
+</mapper>

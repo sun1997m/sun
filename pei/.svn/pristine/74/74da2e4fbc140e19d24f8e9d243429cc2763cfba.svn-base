@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<link href="../datepicker/default/datePicker.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/WdatePicker.js"></script>
+<script>
+	function selectPost(b){
+		var v = document.getElementById("post");
+		if(v.style.display=="none"){
+			v.style.display="";
+		}
+		else{
+			v.style.display="none";
+			if(b==1)
+				document.all.se.innerHTML="检务-签证岗;食品-证单管理岗";
+			else
+				document.all.se.innerHTML="";
+		}
+	}
+</script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">详细信息</td>
+            </tr>
+            <tr>
+              <td width="15%" class="body06">学员编号：</td>
+              <td width="33%" class="body04"><input name="textfield" type="text" class="bodytext" /></td>
+              <td width="16%" class="body06">姓名：</td>
+              <td width="36%" class="body04">              <input name="textfield32" type="text" class="bodytext" /></td>
+            </tr>
+            <tr>
+              <td class="body06">性别：</td>
+              <td class="body04">                <input type="radio" name="c"/>
+                男
+                <input type="radio" name="c"/>
+              女              </td>
+              <td class="body06">学历：</td>
+              <td class="body04"><select name="select2" class="bodytext01">
+                <option>高中</option>
+                <option>专科</option>
+                <option>本科</option>
+                <option>研究生</option>
+                <option>硕士</option>
+                <option>博士</option>
+                <option>双硕士</option>
+                <option>双博士</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td class="body06">专业：</td>
+              <td class="body04"><select name="select" class="bodytext01">
+                <option>计算机</option>
+                <option>法律</option>
+                <option>国际金融贸易</option>
+                <option>电子商务</option>
+              </select></td>
+              <td class="body06">出生日期：</td>
+              <td class="body04"><input name="textfield3" type="text" class="Wdate" onfocus="new WdatePicker(this)" /></td>
+            </tr>
+			 <tr>
+              <td class="body06">角色：</td>
+              <td class="body04"><select name="select" class="bodytext01">
+                <option>超级管理员</option>
+                <option>管理员</option>
+                <option>学生</option>
+              </select></td>
+              <td class="body06">登录名称：</td>
+              <td class="body04"><input name="textfield4" type="text" class="bodytext" /></td>
+            </tr>
+			 <tr>
+              <td class="body06">所属机构：</td>
+              <td class="body04"><select name="select3" class="bodytext01">
+			<option>机构1</option>
+			<option>机构2</option>
+			<option>机构3</option>
+              </select></td>
+              <td class="body06">专业岗位：</td>
+              <td class="body04"><a href="#" onclick="selectPost(0);">选择</a>&nbsp;&nbsp;&nbsp;<label id="se"></label></td>
+            </tr>
+			 <tr>
+              <td class="body06">职务：</td>
+              <td class="body04">                <select name="select5" class="bodytext01">
+                </select></td>
+              <td class="body06">管理员：</td>
+              <td class="body04"><input type="radio">省局管理员&nbsp;&nbsp;<input type="radio">分支局管理员</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="81%" height="35">&nbsp;</td>
+                    <td width="10%"><input type="image" src="../images/ht-but-save.jpg" name="Submit22" onclick="javascript:history.back()"/></td>
+                    <td width="9%"><input type="image" src="../images/ht-but-back.jpg" name="Submit23"  onclick="javascript:history.back()"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+
+        </table>
+	<div id="post" style="position:absolute;left:320px;top:165px;display:none">
+<table bgcolor="#ffffff">
+		<tr>
+			<td class="body06" align="center"><a href="#" onclick="selectPost(1);">确定</a>&nbsp;&nbsp;&nbsp;<a href="#" onclick="selectPost(0);">取消</a></td>
+		</tr>
+		<tr>
+			<td class="body04">检务</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+		<tr>
+			<td class="body04">食品</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+		<tr>
+			<td class="body04">动检</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+		<tr>
+			<td class="body04">植检</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+		<tr>
+			<td class="body04">财务</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+		<tr>
+			<td class="body04">统计</td>
+		</tr>
+		<tr>
+			<td class="body06">
+				<input type="checkbox" />报检岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />计费岗&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" />签证岗&nbsp;&nbsp;
+				<input type="checkbox" />放行岗&nbsp;&nbsp;
+				<input type="checkbox" />档案管理岗&nbsp;&nbsp;<br/>
+				<input type="checkbox" />流程管理岗&nbsp;&nbsp;
+				<input type="checkbox" />证单管理岗&nbsp;&nbsp;
+				<input type="checkbox" />印章管理岗&nbsp;&nbsp;
+				<input type="checkbox" />综合管理岗
+			</td>
+		</tr>
+</table>
+	</div>
+
+</body>
+</html>
+

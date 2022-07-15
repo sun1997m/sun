@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+  查询成功
+ <table>
+     <tr>
+
+         [[${stu.id}]]
+     </tr>
+     <tr>
+         <td>[[${stu.name}]]</td>
+      
+     </tr>
+     <tr>
+         <td>[[${stu.age}]]</td>
+      
+     </tr>
+     <tr>
+         <td>[[${stu.imag}]]</td>
+      
+     </tr>
+<tr>
+   <td><img th:src="@{'/imag/'+${stu.imag}}"></td>
+</tr>
+
+
+ </table>
+
+</body>
+</html>

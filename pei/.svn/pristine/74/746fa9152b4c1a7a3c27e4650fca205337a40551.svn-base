@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">详细信息</td>
+            </tr>
+            <tr>
+              <td width="15%" class="body06">学员编号：</td>
+              <td width="33%" class="body04">001</td>
+              <td width="16%" class="body06">姓名：</td>
+              <td width="36%" class="body04"> 付银银 </td>
+            </tr>
+            <tr>
+              <td class="body06">性别：</td>
+              <td class="body04">女</td>
+              <td class="body06">学历：</td>
+              <td class="body04">本科</td>
+            </tr>
+            <tr>
+              <td class="body06">专业：</td>
+              <td class="body04">计算机</td>
+              <td class="body06">出生日期：</td>
+              <td class="body04">1986-04-03</td>
+            </tr>
+			 <tr>
+              <td class="body06">角色：</td>
+              <td class="body04">学员</td>
+              <td class="body06">登录名称：</td>
+              <td class="body04">catchzhang</td>
+			 </tr>
+			 <tr>
+              <td class="body06">单位：</td>
+              <td class="body04">质检部</td>
+              <td class="body06">岗位：</td>
+              <td class="body04">检务签证岗</td>
+			 </tr>
+			 <tr>
+              <td class="body06">职务：</td>
+              <td class="body04">部长</td>
+			   <td class="body06">激活日期：</td>
+               <td class="body04">2007-10-11</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td  height="35">&nbsp;</td>
+                    <td width="15%" align="left"><input type="image" src="../images/ht-but-save.jpg" onclick="window.location='studentlist2.html';"/></td>
+                    <td width="10%" align="left"><input type="image" src="../images/ht-but-back.jpg" name="Submit23"  onclick="javascript:history.back()"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+     <tr>
+        <td class="body01a" colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="8" background="../images/ht-body02.jpg" class="body03">分类专业权限</td>
+            </tr>
+            <tr>
+              <td width="10%" class="body05" align="center">选择</td>
+              <td width="40%" class="body05" align="center">分类专业</td>
+		<td width="10%" class="body05" align="center">选择</td>
+              <td width="40%" class="body05" align="center">分类专业</td>
+			  
+            </tr>
+            <tr>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">检务</td>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">食品</td>
+            </tr>
+            <tr>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">动检</td>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">植检</td>
+            </tr>
+            <tr>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">财务</td>
+              <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+              <td class="body03" align="center">统计</td>
+            </tr>
+
+        </table></td>
+      </tr>
+</table>
+
+</body>
+</html>

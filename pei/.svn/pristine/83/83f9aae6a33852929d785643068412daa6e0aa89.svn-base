@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东检验检疫（检务）网上培训系统后台管理系统</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+	function add_Sub()
+	{
+		window.document.location="editprivilege.html";
+	}
+</script>
+<body topmargin="0" leftmargin="0" >
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">当前位置：统计查询-考核情况统计查询</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="4" background="../images/ht-body02.jpg" class="body03">权限查询 </td>
+          </tr>
+          <tr>
+            <td width="25%" class="body06">学员姓名：</td>
+            <td width="27%" class="body04"><input name="textfield" type="text" class="bodytext" /></td>
+            <td width="18%" class="body06">分支局：</td>
+			<td width="30%" class="body03"><select name="select" class="bodytext01">
+              </select></td>
+          </tr>
+		  <tr>
+            <td width="25%" class="body06">学员工号：</td>
+            <td width="27%" class="body04"><input name="textfield" type="text" class="bodytext" /></td>
+            <td colspan="2" class="body04">&nbsp;</td>
+		  </tr>
+          <tr>
+            <td colspan="4" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="48%" height="35">&nbsp;</td>
+                  <td width="31%">&nbsp;</td>
+                  <td width="11%"><input type="image" src="../images/ht-but-check.jpg" name="Submit222" /></td>
+                  <td width="10%"><input type="image" src="../images/ht-but-dcexcel.jpg"/></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="12" background="../images/ht-body02.jpg" class="body03">查询结果</td>
+          </tr>
+          <tr>
+            <td width="14%" class="body05" align="center"> 学员姓名</td>
+            <td width="14%" class="body05" align="center">分支局</td>
+            <td width="22%" class="body05" align="center">考试题目</td>
+            <td width="19%" class="body05" align="center">考试日期</td>
+            <td width="31%" class="body05" align="center">分数</td>
+          </tr>
+          <tr >
+            <td rowspan="4" align="center" class="body03">张三丰</td>
+            <td rowspan="4" align="center" class="body03">A局</td>
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">100</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">58</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">76</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">98			</td>
+          </tr>
+		  <tr >
+            <td rowspan="4" align="center" class="body03">欧阳风</td>
+            <td rowspan="4" align="center" class="body03">B局</td>
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">100</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">58</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">76</td>
+          </tr>
+          <tr >
+            <td class="body03" align="center">考试题目考试题目考试题目</td>
+            <td class="body03" align="center">2007-05-01</td>
+            <td class="body03" align="center">98			</td>
+          </tr>
+          <tr>
+            <td colspan="12" class="body03">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+</body>
+</html>

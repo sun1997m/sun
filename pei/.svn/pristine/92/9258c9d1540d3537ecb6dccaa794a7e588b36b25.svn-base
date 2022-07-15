@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style>
+body{ font-size:12px; color:#666;}
+* { margin: 0px; padding: 0px;}
+form {
+	margin:0px;
+	padding:0px;
+}
+
+A:link {
+	COLOR: #22397d; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #22397d; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #913000; TEXT-DECORATION: underline
+}
+.top01{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+.top02{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+}
+.top03{ height:140px; background-color:#E3EFFC;}
+.use{ font-size:12px;}
+.textbox{ width:80px; height:12px;}
+.yanzheng{ font-size:12px; color:#060048;}
+.left01{ padding:4px 0 8px 26px;}
+.left02{ padding:0px 0 0px 26px;}
+.body{ padding:13px 0 13px 26px;}
+.body01{ padding-left:2px;}
+.title01{ font-size:14px; font-weight:bold; color:#666;}
+.body02{ padding:0px 17px 0px 17px; height:25px; text-align:left;}
+.body03{ line-height:25px;}
+.bottom{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	text-align:center;
+}
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="top01"><img src="images/top.gif" width="779" height="141" /></td>
+  </tr>
+  <tr>
+    <td class="top02"><table width="779" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="224" align="left" valign="top" background="images/leftbg.gif"><table width="224" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="224" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="50"><img src="images/top01.gif" width="50" height="205" /></td>
+                  <td width="155" align="left" valign="top"><table width="144" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><img src="images/top02.gif" width="150" height="39" /></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top" class="top03"><form>
+                            <table width="150" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td width="60" height="21">用户代码：</td>
+                                <td width="74"><input name="textfield" type="text" class="textbox" /></td>
+                              </tr>
+                              <tr>
+                                <td height="21">密&nbsp;&nbsp;码：</td>
+                                <td><input name="textfield2" type="text" class="textbox" /></td>
+                              </tr>
+                              <tr>
+                                <td height="21">验证码：</td>
+                                <td><input name="textfield3" type="text" class="textbox" /></td>
+                              </tr>
+                              <tr>
+                                <td height="21">身份：</td>
+                                <td><select><option>管理员</option><option>学员</option></select></td>
+                              </tr>                              <tr>
+                                <td height="30" colspan="2" align="center"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="46%"><img src="images/picture.gif" width="75" height="25" /></td>
+                                      <td width="54%" height="35" class="yanzheng"><a href="#">看不清楚换一个</a></td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td height="25" colspan="2" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="52%"><a href="#"><img src="images/but01.gif" width="60" height="20" border="0" onclick="window.location='myindex.html';"/></a></td>
+                                      <td width="48%"><a href="#"><img src="images/but02.gif" width="60" height="20" border="0" /></a></td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                            </table>
+                        </form></td>
+                      </tr>
+                      <tr>
+                        <td><img src="images/top04.gif" width="150" height="23" /></td>
+                      </tr>
+                  </table></td>
+                  <td width="19"><img src="images/top03.gif" width="30" height="205" /></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="left01"><a href="run.html"><img src="images/left01.gif" width="192" height="51" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" background="images/left02bg.gif" class="left02"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="images/left02.gif" width="192" height="49" /></td>
+                </tr>
+                <tr>
+                  <td height="28" align="center" valign="middle"><select name="select1" class="link" style="margin-bottom: 0; width:150px;" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+                      <option selected="selected">-全国质检系统链接-</option>
+                      <option value="http://www.bjciq.gov.cn">北京出入境检验检疫局</option>
+                      <option value="http://www.tjciq.gov.cn">天津出入境检验检疫局</option>
+                      <option value="http://www.sxciq.gov.cn">山西出入境检验检疫局</option>
+                      <option value="http://www.lnciq.gov.cn">辽宁出入境检验检疫局</option>
+                      <option value="http://www.jlciq.gov.cn">吉林出入境检验检疫局</option>
+                      <option value="http://www.hljciq.gov.cn">黑龙江出入境检验检疫局</option>
+                      <option value="http://www.shciq.gov.cn">上海出入境检验检疫局</option>
+                      <option value="http://www.jsciq.gov.cn">江苏出入境检验检疫局</option>
+                      <option value="http://www.ziq.gov.cn">浙江出入境检验检疫局</option>
+                      <option value="http://www.nbciq.gov.cn">宁波出入境检验检疫局</option>
+                      <option value="http://www.ahciq.gov.cn">安徽出入境检验检疫局</option>
+                      <option value="http://www.fjciq.gov.cn">福建出入境检验检疫局</option>
+                      <option value="http://www.xmciq.gov.cn">厦门出入境检验检疫局</option>
+                      <option value="http://www.jxciq.gov.cn">江西出入境检验检疫局</option>
+                      <option value="http://www.sdciq.gov.cn">山东出入境检验检疫局</option>
+                      <option value="http://www.hbciq.gov.cn">湖北出入境检验检疫局</option>
+                      <option value="http://www.gdciq.gov.cn">广东出入境检验检疫局</option>
+                      <option value="http://www.szciq.gov.cn">深圳出入境检验检疫局</option>
+                      <option value="http://www.hiciq.gov.cn">海南出入境检验检疫局</option>
+                      <option value="http://www.gxciq.gov.cn">广西出入境检验检疫局</option>
+                      <option value="http://www.scciq.gov.cn">四川出入境检验检疫局</option>
+                      <option value="http://www.ynciq.gov.cn">云南出入境检验检疫局</option>
+                      <option value="http://www.snciq.gov.cn">陕西出入境检验检疫局</option>
+                      <option value="http://www.xjciq.gov.cn">新疆出入境检验检疫局</option>
+                      <option value="http://www.zhciq.gov.cn">珠海出入境检验检疫局</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td height="28" align="center" valign="middle"><select name="select2" onchange="javascript:window.open(this.options[this.selectedIndex].value)" style="margin-bottom: 0; width:150px;">
+                      <option selected="selected">--中央部门网站--</option>
+                      <option value="http://www.npc.gov.cn/zgrdw/home/index.jsp">全国人大</option>
+                      <option value="http://www.cppcc.gov.cn/">全国政协</option>
+                      <option value="http://www.court.gov.cn/">最高人民法院</option>
+                      <option value="http://www.spp.gov.cn/gzdt/">最高人民检察院 </option>
+                      <option value="http://www.fmprc.gov.cn/chn/">外交部</option>
+                      <option value="http://www.mofcom.gov.cn">商务部</option>
+                      <option value="http://www.moe.edu.cn/">教育部</option>
+                      <option value="http://www.mof.gov.cn/index.htm">财政部</option>
+                      <option value="http://www.mps.gov.cn/">公安部</option>
+                      <option value="http://www.cin.gov.cn/">建设部</option>
+                      <option value="http://www.moc.gov.cn/">交通部</option>
+                      <option value="http://www.mca.gov.cn">民政部</option>
+                      <option value="http://www.legalinfo.gov.cn/gb/moj/node_183.htm">司法部</option>
+                      <option value="http://www.mop.gov.cn/">人事部</option>
+                      <option value="http://www.agri.gov.cn/">农业部</option>
+                      <option value="http://www.mlr.gov.cn/GuotuPortal/appmanager/guotu/index">国土资源部</option>
+                      <option value="http://www.mii.gov.cn/mii/index.html">信息产业部</option>
+                      <option value="http://www.most.gov.cn/">科学技术部</option>
+                      <option value="http://www.molss.gov.cn/">劳动和社会保障部</option>
+                      <option value="http://www.moh.gov.cn/">卫生部</option>
+                      <option value="http://www.mwr.gov.cn/">水利部</option>
+                      <option value="http://www.ccnt.gov.cn/">文化部</option>
+                      <option value="http://www.npfpc.gov.cn/index.htm">计划生育委员会</option>
+                      <option value="http://www.audit.gov.cn/cysite/chpage/c1/">国家审计署</option>
+                      <option value="http://www.chinamor.cn.net/">铁道部</option>
+                      <option value="http://www.seac.gov.cn/homepage/homepage.jsp">民族事务委员会</option>
+                      <option value="http://www.pbc.gov.cn/">中国人民银行</option>
+                      <option value="http://www.customs.gov.cn/">海关总署</option>
+                      <option value="http://www.stats.gov.cn/">国家统计局</option>
+                      <option value="http://www.forestry.gov.cn/">国家林业局</option>
+                      <option value="http://www.cnta.gov.cn/">国家旅游局</option>
+                      <option value="http://www.ncac.gov.cn">国家版权局</option>
+                      <option value="http://www.sport.gov.cn/">国家体育总局</option>
+                      <option value="http://www.crich.org.cn/">国务院参事室</option>
+                      <option value="http://www.chinatax.gov.cn/">国家税务总局</option>
+                      <option value="http://www.sipo.gov.cn/">国家知识产权局</option>
+                      <option value="http://www.zhb.gov.cn/">国家环境保护总局</option>
+                      <option value="http://www.sda.gov.cn/cmsweb/webportal">国家药品监督管理局</option>
+                      <option value="http://www.saic.gov.cn/">国家工商行政管理总局</option>
+                      <option value="http://www.ggj.gov.cn/index.htm">国务院机关事务管理局</option>
+                      <option value="http://www.sarft.gov.cn/index.html">国家广播电影电视总局</option>
+                      <option value="http://www.chinapost.gov.cn/">国家邮政局</option>
+                      <option value="http://www.soa.gov.cn/">国家海洋局</option>
+                      <option value="http://www.chinagrain.gov.cn/">国家粮食局</option>
+                      <option value="http://www.sbsm.gov.cn/">国家测绘局</option>
+                      <option value="http://www.safe.gov.cn/0430/main_0430.jsp">国家外汇管理局</option>
+                      <option value="http://www.tobacco.gov.cn/">国家烟草专卖局</option>
+                      <option value="http://www.safea.gov.cn/">国家外国专家局</option>
+                      <option value="http://www.satcm.gov.cn/">国家中医药管理局</option>
+                      <option value="http://www.xinhua.org/">新华通讯社</option>
+                      <option value="http://www.cashq.ac.cn">中国科学院</option>
+                      <option value="http://www.cae.cn/">中国工程院</option>
+                      <option value="http://www.csi.ac.cn/html/index.jsp">中国地震局</option>
+                      <option value="http://www.cass.net.cn/webnew/index.asp">中国社会科学院</option>
+                      <option value="http://www.drc.gov.cn/">国务院发展研究中心</option>
+                      <option value="http://www.cnsa.gov.cn/">国家航天局</option>
+                      <option value="http://www.caea.gov.cn/">国家原子能机构</option>
+                      <option value="http://www.cctb.net/">中共中央编译局</option>
+                      <option value="http://www.nlc.gov.cn/">中国国家图书馆</option>
+                      <option value="http://www.ccyl.org.cn/">共青团中央</option>
+                      <option value="http://www.acfic.com.cn/">中华全国工商业联合会</option>
+                      <option value="http://www.sic.gov.cn/">国家信息中心</option>
+                      <option value="http://www.cma.gov.cn/">国家气象局</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td height="28" align="center" valign="middle"><select name="select3" onchange="javascript:window.open(this.options[this.selectedIndex].value)" style="margin-bottom: 0; width:150px;">
+                      <option selected="selected">-省(区市)政府网站-</option>
+                      <option value="http://www.beijing.gov.cn/">北京市</option>
+                      <option value="http://www.tj.gov.cn/">天津市</option>
+                      <option value="http://www.cq.gov.cn/">重庆市</option>
+                      <option value="http://www.shanghai.gov.cn/">上海市</option>
+                      <option value="http://www.ln.gov.cn">辽宁省</option>
+                      <option value="http://www.hlj.gov.cn/">黑龙江省</option>
+                      <option value="http://www.hebei.gov.cn/index.jsp">河北省</option>
+                      <option value="http://www.zhejiang.gov.cn/gb/node2/node50/index.html">浙江省</option>
+                      <option value="http://www.qhinfo.com/">青海省</option>
+                      <option value="http://www.sd.cei.gov.cn/">山东省</option>
+                      <option value="http://www.ah.gov.cn/">安徽省</option>
+                      <option value="http://www.fujian.gov.cn/">福建省</option>
+                      <option value="http://www.hubei.gov.cn/">湖北省</option>
+                      <option value="http://www.hunan.gov.cn/">湖南省</option>
+                      <option value="http://www.jiangsu.gov.cn/gb/zgjs/index.html">江苏省</option>
+                      <option value="http://www.jiangxi.gov.cn/gb/jxzwgw/">江西省</option>
+                      <option value="http://www.sc.gov.cn/">四川省</option>
+                      <option value="http://www.yn.gov.cn/portal/index.jsp">云南省</option>
+                      <option value="http://www.shanxi.gov.cn/index.html">山西省</option>
+                      <option value="http://www.jl.gov.cn/">吉林省</option>
+                      <option value="http://www.henan.gov.cn/">河南省</option>
+                      <option value="http://www.hainan.gov.cn/style1/">海南省</option>
+                      <option value="http://www.gzgov.gov.cn/">贵州省</option>
+                      <option value="http://www.shaanxi.gov.cn/">陕西省</option>
+                      <option value="http://www.gd.gov.cn/">广东省</option>
+                      <option value="http://www.gxi.gov.cn/">广西壮族自治区</option>
+                      <option value="http://www.gansu.gov.cn/">甘肃省</option>
+                      <option value="http://www.nx.cninfo.net/gov/index.htm">宁夏回族自治区</option>
+                      <option value="http://www.nmg.gov.cn/">内蒙古自治区</option>
+                      <option value="http://www.xinjiang.gov.cn/">新疆维吾尔自治区</option>
+                      <option value="http://www.info.gov.hk/">澳门特别行政区</option>
+                      <option value="http://www.info.gov.hk/">香港特别行政区</option>
+                      <option value="http://www.chinataiwan.org/web/webportal/index.html">中国台湾</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td><img src="images/left03.gif" width="192" height="23" /></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="555" align="left" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td ><img src="images/body01.gif" width="555" height="170" /></td>
+            </tr>
+            <tr>
+              <td class="body"><table width="518" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="3%" align="left" valign="top"><img src="images/dot01.gif" width="5" height="24" /></td>
+                        <td width="81%" align="left" valign="bottom" class="title01">通知公告</td>
+                        <td width="2%" valign="middle">&nbsp;</td>
+                        <td width="14%" valign="bottom"><a href="#">&gt;&gt; 更多</a></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td background="images/body02.gif" class="body02"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="85%" class="body03"><a href="#">广东检验检疫（检务）网上培训系统新闻广东检验检疫（检务）<br />
+                          广东检验检疫（检务）网上培训系统新闻广东检验检疫（检务）<br />
+                          广东检验检疫（检务）网上培训系统新闻广东检验检疫（检务）<br />
+                          广东检验检疫（检务）网上培训系统新闻广东检验检疫（检务）<br />
+                          广东检验检疫（检务）网上培训系统新闻广东检验检疫（检务）</a></td>
+                        <td width="15%" class="body03">2007/10/10<br />
+                          2007/10/10<br />
+                          2007/10/10<br />
+                          2007/10/10<br />
+                          2007/10/10</td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="top02"><img src="images/bottom.gif" width="779" height="7" /></td>
+  </tr>
+  <tr>
+    <td height="49" class="bottom">广东检验检疫（检务）网上培训系统版权所有 粤ICP备12345678号 </td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress ThymeleafVariablesResolveInspection -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body {
+	margin:0 auto;
+	padding:0;
+	font-size:12px;
+	color:#666;
+	background-color:#FFF;
+	font-family:Arial,"宋体";
+}
+* { margin: 0px; padding: 0px;}
+form {
+	margin:0px;
+	padding:0px;
+}
+a:link {
+	COLOR: #22397d; TEXT-DECORATION: none
+}
+a:visited {
+	COLOR: #22397d; TEXT-DECORATION: none
+}
+a:hover {
+	COLOR: #913000; TEXT-DECORATION: underline
+}
+.body01{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	padding-left:22px;
+}
+.body02{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #EDEDEB;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+}
+.body03{
+	height:25px;
+	padding-left:8px;
+	font-size:12px;
+	color:#000066;
+	text-align:left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EDEDEB;
+	background-color:#F8F5F5;
+}
+.body04{
+	height:25px;
+	padding-left:8px;
+	font-size:12px;
+	color:#000066;
+	text-align:left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EDEDEB;
+	
+}
+.body05{
+	height:35px;
+	font-size:18px;
+	font-weight:bolder;
+	color:#000;
+	text-align:center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EDEDEB;
+	
+}
+.body06{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: ##EDEDEB;
+}
+
+
+
+.bottom {	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	text-align:center;
+}
+.time{ background-color:#00FFCC;}
+</style>
+</head>
+
+<script>   
+  var   alltime=20;   
+  function   setTime(){   
+  if   (alltime<=0){   
+  if(confirm('你的得分为100'))
+  {
+	
+	 window.close(); 
+  }
+  else
+  {
+	window.close();
+  }
+ 
+  clearInterval(s);   
+  }   
+  else{   
+  alltime--;   
+  m=Math.floor(alltime/60);   
+  se=Math.round(alltime-(Math.floor(alltime/60)*60));  
+  
+
+  if(m>10)
+  {
+     time.style.background.color='green';
+  }
+  else
+  {
+     time.style.background.color='red';
+  } 
+    time.innerText="剩余"+m+"分"+se+"秒";  
+   
+  }   
+  }   
+  s=setInterval("setTime()",1000)   
+  </script>  
+<script language="JavaScript">
+<!--
+if (window.Event) 
+  document.captureEvents(Event.MOUSEUP); 
+function nocontextmenu() {
+ event.cancelBubble = true;
+ event.returnValue = false;
+ return false;
+}
+function norightclick(e){
+ if (window.Event) {
+  if (e.which == 2 || e.which == 3)
+   return false;
+ }
+ else if (event.button == 2 || event.button == 3){
+   event.cancelBubble = true
+   event.returnValue = false;
+   return false;
+  }
+}
+document.oncontextmenu = nocontextmenu;  // for IE5+
+document.onmousedown = norightclick;  // for all others
+
+
+//-->
+</script>
+
+<script>
+    function answer() {
+        alert(1111)
+        //获取表单
+        var frm=document.getElementById("frm1");
+        //获取单选框的值
+        var radio=document.getElementsByName;
+        for(var i=0;i<radio.size();i++){
+           var dd=document.getElementsByName(i);
+            if(dd[i].checked){
+                alert(dd[i].val)
+            }
+        }
+        frm.action="/";
+        frm.submit();
+    }
+</script>
+
+
+<body topmargin="0" leftmargin="0" onselectstart="return   false" >
+<table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="/images/kstop.jpg" width="779" height="140" /></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="body01"><table width="756" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="body02 body03">当前位置：&gt;&gt; 在线考试</td>
+      </tr>
+      <tr>
+        <td class="body02 body04">考试日期：[ 2007-10-10 ] &nbsp;| &nbsp; &nbsp;设定时间[ 100分钟 ]  &nbsp; |   &nbsp;&nbsp;剩余时间：[
+            <label id='time'></label>
+] (注意：试卷在规定时间到后自动提交，请及时答卷交卷) </td>
+      </tr>
+      <tr>
+        <td class="body02 body05">广东检验检疫爱滋培训专试(2007-10-10)</td>
+      </tr>
+        <form action="" method="post" id="frm1">
+            <!--隐藏域-->
+            <input type="hidden" value="" id="answer" >
+      <tr>
+        <td align="center" class="body02 body06">
+          <table cellspacing="0" cellpadding="0" align="center" border="0">
+          <tbody>
+            <tr>
+              <td width="149">&nbsp;</td>
+              <td width="1" bgcolor="#EDEDEB"></td>
+              <td width="20">&nbsp;</td>
+              <td width="430">&nbsp;</td>
+            </tr>
+            <tr>
+              <td valign="bottom" width="149"><table cellspacing="0" cellpadding="0" width="130" align="right" 
+                  border="0">
+                  <tbody th:each="answer:${answer}">
+                    <tr>
+                      <td><div align="center"></div></td>
+                      <td class="kaos"><div align="center">A</div></td>
+                      <td class="kaos"><div align="center">B</div></td>
+                      <td class="kaos"><div align="center">C</div></td>
+                      <td class="kaos"><div align="center">D</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="wenzi" align="center">[[${answerStat.index}+1]].</div></td>
+                      <td><div align="center">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><input type="radio" value="A" 
+                              th:name="${answerStat.index}" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                      <td><div align="center">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><input type="radio" value="B"
+                              th:name="${answerStat.index}" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                      <td><div align="center">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><input type="radio" value="C"
+                             th:name="${answerStat.index}" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                      <td><div align="center">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><input type="radio" value="D"
+                           th:name="${answerStat.index}" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                    </tr>
+                  </tbody>
+              </table></td>
+              <td width="1" bgcolor="#EDEDEB"></td>
+              <td width="20">&nbsp;</td>
+              <td width="430"><table cellspacing="0" cellpadding="0" width="420" border="0">
+                  <tbody th:each="answer:${answer}" >
+                    <tr>
+                      <td class="zhengwen" align="left">[[${answer.answerQues}]]</td>
+                    </tr>
+                    <tr>
+                      <td class="zhengwen" align="left">
+                          [[${answer.answerXuan}]]
+                      </td>
+                    </tr>
+                  </tbody>
+              </table></td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="35" align="center" valign="middle" class="body02 body06">
+            <table width="200" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100" align="center"><input type="button"  value="提交答卷"  onclick="answer()" /></td>
+            <td width="100" align="center"><input type="submit" name="Submit2" value=" 关 闭 " /></td>
+          </tr>
+        </table></td>
+      </tr>
+        </form>
+      <tr>
+        <td height="40" align="center" valign="middle" class="body02 body06">广东检验检疫（检务）网上培训系统版权所有 粤ICP备12345678号 </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

